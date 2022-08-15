@@ -12,3 +12,7 @@
    - [Part 2](./src/bin/basic_match_2.rs)
 5. [Loops](./src/bin/loops.rs)
 6. [While Loops](./src/bin/while_loops.rs)
+7. [Enums](./src/bin/enums.rs)
+8. [Structs](./src/bin/structs.rs)
+9. [Tuples](./src/bin/tuples.rs)
+10. [Expressions](./src/bin/expressions.rs)

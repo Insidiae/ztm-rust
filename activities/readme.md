@@ -20,3 +20,6 @@
 12. [Implementing Functionality](./src/bin/implementing_functionality.rs)
 13. [Vectors & For Loops](./src/bin/vectors.rs)
 14. [Strings](./src/bin/strings.rs)
+15. [Advanced Match](./src/bin/advanced_match.rs)
+16. [Option](./src/bin/option.rs)
+17. [Standard Library API docs](./src/bin/std_lib_api_docs.rs)

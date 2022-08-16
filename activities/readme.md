@@ -17,3 +17,6 @@
 9. [Tuples](./src/bin/tuples.rs)
 10. [Expressions](./src/bin/expressions.rs)
 11. [Ownership](./src/bin/ownership.rs)
+12. [Implementing Functionality](./src/bin/implementing_functionality.rs)
+13. [Vectors & For Loops](./src/bin/vectors.rs)
+14. [Strings](./src/bin/strings.rs)

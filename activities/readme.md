@@ -26,3 +26,4 @@
 18. Fallible Functions
 	- [Result](./src/bin/result.rs)
 	- [Result & The Question Mark Operator](./src/bin/question_mark_operator.rs)  
+19. [HashMap Basics](./src/bin/hashmap_basics.rs)

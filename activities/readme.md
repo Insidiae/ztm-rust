@@ -16,3 +16,4 @@
 8. [Structs](./src/bin/structs.rs)
 9. [Tuples](./src/bin/tuples.rs)
 10. [Expressions](./src/bin/expressions.rs)
+11. [Ownership](./src/bin/ownership.rs)

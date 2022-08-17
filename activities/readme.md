@@ -34,3 +34,5 @@
 24. [Testing](./src/bin/testing.rs)
 25. [External Crates](./src/bin/external_crates.rs)
 26. [External Modules](./src/bin/external_modules.rs)
+27. [Gathering User Input](./src/bin/user_input.rs)
+28. [**Milestone Project: Billing Application**](./src/bin/billing_application.rs)

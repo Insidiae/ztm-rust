@@ -30,3 +30,7 @@
 20. [Map Combinator](./src/bin/map_combinator.rs)
 21. [Option Combinators](./src/bin/option_combinator.rs)
 22. [Using Iterators](./src/bin/iterators.rs)
+23. [Inline Modules](./src/bin/inline_modules.rs)
+24. [Testing](./src/bin/testing.rs)
+25. [External Crates](./src/bin/external_crates.rs)
+26. [External Modules](./src/bin/external_modules.rs)

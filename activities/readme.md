@@ -27,3 +27,6 @@
 	- [Result](./src/bin/result.rs)
 	- [Result & The Question Mark Operator](./src/bin/question_mark_operator.rs)  
 19. [HashMap Basics](./src/bin/hashmap_basics.rs)
+20. [Map Combinator](./src/bin/map_combinator.rs)
+21. [Option Combinators](./src/bin/option_combinator.rs)
+22. [Using Iterators](./src/bin/iterators.rs)

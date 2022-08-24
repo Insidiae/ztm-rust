@@ -36,3 +36,7 @@
 26. [External Modules](./src/bin/external_modules.rs)
 27. [Gathering User Input](./src/bin/user_input.rs)
 28. [**Milestone Project: Billing Application**](./src/bin/billing_application.rs)
+29. [Traits](./src/bin/traits.rs)
+30. [Generics & Functions](./src/bin/generics_and_functions.rs)
+31. [Generics & Structures](./src/bin/generics_and_structures.rs)
+32. [Trait Objects](./src/bin/trait_objects.rs)

@@ -40,3 +40,5 @@
 30. [Generics & Functions](./src/bin/generics_and_functions.rs)
 31. [Generics & Structures](./src/bin/generics_and_structures.rs)
 32. [Trait Objects](./src/bin/trait_objects.rs)
+33. [Lifetimes & Structures](./src/bin/lifetimes_and_structures.rs)
+34. [Lifetimes & Functions](./src/bin/lifetimes_and_functions.rs)

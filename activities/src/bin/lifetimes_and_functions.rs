@@ -1,0 +1,21 @@
+// Topic: Lifetimes & Functions
+//
+// Requirements:
+// Create a program that compares which string is longer (highest length).
+
+// * The comparison must be done using a function named `longest`
+// * No data may be copied (cannot use .to_owned() or .to_string())
+fn longest<'a>(one: &'a str, two: &'a str) -> &'a str {
+	if two.len() > one.len() {
+		two
+	} else {
+		// * If both strings are the same length, the first one should be returned
+		one
+	}
+}
+
+fn main() {
+	let short = "hello";
+	let long = "this is a long message";
+	println!("{}", longest(short, long))
+}

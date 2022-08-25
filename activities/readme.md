@@ -47,3 +47,4 @@
 37. [TypeState Pattern](./src/bin/typestates.rs)
 38. [Match Guards & Binding](./src/bin/match_guards_and_binding.rs)
 39. [Slices](./src/bin/slices.rs)
+40. [TryFrom/TryInto](./src/bin/tryfrom_tryinto.rs)

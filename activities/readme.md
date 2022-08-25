@@ -42,3 +42,8 @@
 32. [Trait Objects](./src/bin/trait_objects.rs)
 33. [Lifetimes & Structures](./src/bin/lifetimes_and_structures.rs)
 34. [Lifetimes & Functions](./src/bin/lifetimes_and_functions.rs)
+35. [Creating a Custom Error](./src/bin/custom_error_types.rs)
+36. [Utilizing The New Type Pattern](./src/bin/new_type_pattern.rs)
+37. [TypeState Pattern](./src/bin/typestates.rs)
+38. [Match Guards & Binding](./src/bin/match_guards_and_binding.rs)
+39. [Slices](./src/bin/slices.rs)

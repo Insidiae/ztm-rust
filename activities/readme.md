@@ -48,3 +48,5 @@
 38. [Match Guards & Binding](./src/bin/match_guards_and_binding.rs)
 39. [Slices](./src/bin/slices.rs)
 40. [TryFrom/TryInto](./src/bin/tryfrom_tryinto.rs)
+41. [Threads](./src/bin/threads.rs)
+42. [Channels](./src/bin/channels.rs)

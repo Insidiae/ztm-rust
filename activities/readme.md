@@ -50,3 +50,5 @@
 40. [TryFrom/TryInto](./src/bin/tryfrom_tryinto.rs)
 41. [Threads](./src/bin/threads.rs)
 42. [Channels](./src/bin/channels.rs)
+43. [Smart Pointers & RefCell](./src/bin/smart_pointers_and_refcell.rs)
+44. [Arc/Mutex](./src/bin/arc_mutex.rs)

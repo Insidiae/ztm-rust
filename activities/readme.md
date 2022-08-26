@@ -52,3 +52,4 @@
 42. [Channels](./src/bin/channels.rs)
 43. [Smart Pointers & RefCell](./src/bin/smart_pointers_and_refcell.rs)
 44. [Arc/Mutex](./src/bin/arc_mutex.rs)
+45. [Implementing Iterator](./src/bin/implementing_iterator.rs)

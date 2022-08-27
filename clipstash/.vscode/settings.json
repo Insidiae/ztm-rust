@@ -1,5 +1,6 @@
 {
-    "rust-analyzer.server.extraEnv": {
-        "DATABASE_URL": "sqlite:data.db"
-    }
+	"editor.defaultFormatter": "rust-lang.rust-analyzer",
+	"rust-analyzer.server.extraEnv": {
+		"DATABASE_URL": "sqlite:data.db"
+	}
 }

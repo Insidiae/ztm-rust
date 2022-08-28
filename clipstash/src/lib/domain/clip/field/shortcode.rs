@@ -1,24 +1,26 @@
 use crate::domain::clip::ClipError;
 use derive_more::From;
-use serde::{Serialize, Deserialize};
+use rocket::request::FromParam;
+use rocket::{UriDisplayPath, UriDisplayQuery};
+use serde::{Deserialize, Serialize};
 use std::str::FromStr;
 
-#[derive(Debug, Clone, From, Serialize, Deserialize)]
+#[derive(Debug, Clone, From, Serialize, Deserialize, UriDisplayPath, UriDisplayQuery)]
 pub struct ShortCode(String);
 
 impl ShortCode {
 	pub fn new() -> Self {
 		use rand::prelude::*;
-		let allowed_chars = [
-			'a','b','c','d','1','2','3','4'
-		];
+		let allowed_chars = ['a', 'b', 'c', 'd', '1', '2', '3', '4'];
 
 		let mut rng = thread_rng();
 		let mut shortcode = String::with_capacity(10);
 
 		for _ in 0..10 {
 			shortcode.push(
-				*allowed_chars.choose(&mut rng).expect("Sampling array should have values.")
+				*allowed_chars
+					.choose(&mut rng)
+					.expect("Sampling array should have values."),
 			)
 		}
 
@@ -49,6 +51,14 @@ impl From<ShortCode> for String {
 impl From<&str> for ShortCode {
 	fn from(shortcode: &str) -> Self {
 		ShortCode(String::from(shortcode))
+	}
+}
+
+impl<'r> FromParam<'r> for ShortCode {
+	type Error = &'r str;
+
+	fn from_param(param: &'r str) -> Result<Self, Self::Error> {
+		Ok(ShortCode::from(param))
 	}
 }
 

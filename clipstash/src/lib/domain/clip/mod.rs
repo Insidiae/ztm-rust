@@ -1,10 +1,11 @@
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 use thiserror::Error;
 
 pub mod field;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Clip {
+	#[serde(skip)]
 	pub clip_id: field::ClipId,
 	pub shortcode: field::ShortCode,
 	pub content: field::Content,
@@ -30,5 +31,5 @@ pub enum ClipError {
 	#[error("ID Parse Error: {0}")]
 	Id(#[from] uuid::Error),
 	#[error("Hits Parse Error: {0}")]
-	Hits(#[from] std::num::TryFromIntError)
+	Hits(#[from] std::num::TryFromIntError),
 }

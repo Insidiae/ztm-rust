@@ -53,3 +53,10 @@
 43. [Smart Pointers & RefCell](./src/bin/smart_pointers_and_refcell.rs)
 44. [Arc/Mutex](./src/bin/arc_mutex.rs)
 45. [Implementing Iterator](./src/bin/implementing_iterator.rs)
+46. **Declarative Macros**
+	1. [Control Flow](./src/bin/macros_control_flow.rs)
+	2. [Impl Blocks](./src/bin/macros_impl_blocks.rs)
+	3. [HashMap](./src/bin/macros_hashmap.rs)
+	4. [Syntax Extension](./src/bin/macros_syntax_extension.rs)
+	5. [Generating Tests](./src/bin/macros_generating_tests.rs)
+	6. [Function Tracer](./src/bin/macros_function_tracer.rs)

@@ -1,23 +1,24 @@
 use crate::domain::clip::ClipError;
-use serde::{Serialize, Deserialize};
+use rocket::form::{self, FromFormField, ValueField};
+use serde::{Deserialize, Serialize};
 use std::str::FromStr;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Title(Option<String>);
 
 impl Title {
-	pub fn new<T: Into<Option<String>>>(title: T) -> Result<Self, ClipError> {
+	pub fn new<T: Into<Option<String>>>(title: T) -> Self {
 		let title: Option<String> = title.into();
 
 		match title {
 			Some(title) => {
 				if !title.trim().is_empty() {
-					Ok(Self(Some(title)))
+					Self(Some(title))
 				} else {
-					Ok(Self(None))
+					Self(None)
 				}
 			}
-			None => Ok(Self(None))
+			None => Self(None),
 		}
 	}
 
@@ -35,6 +36,13 @@ impl Default for Title {
 impl FromStr for Title {
 	type Err = ClipError;
 	fn from_str(s: &str) -> Result<Self, Self::Err> {
-		Self::new(String::from(s))
+		Ok(Self::new(String::from(s)))
+	}
+}
+
+#[rocket::async_trait]
+impl<'r> FromFormField<'r> for Title {
+	fn from_value(field: ValueField<'r>) -> form::Result<'r, Self> {
+		Ok(Self::new(field.value.to_owned()))
 	}
 }
